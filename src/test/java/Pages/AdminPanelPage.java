@@ -45,16 +45,16 @@ public class AdminPanelPage {
     private By createCourseTitleWeb = By.xpath("//h2[contains(text(),'Create New Course')]");
 
     private By courseTitleFieldNative = By.xpath("//android.widget.EditText[@hint='Course Title *']");
-    private By courseTitleFieldWeb = By.xpath("//input[@placeholder='Course Title']");
+    private By courseTitleFieldWeb = By.xpath("//input[preceding-sibling::label[text()='Course Title *']]");
 
     private By descriptionFieldNative = By.xpath("//android.widget.EditText[@hint='Description *']");
-    private By descriptionFieldWeb = By.xpath("//textarea[@placeholder='Description']");
+    private By descriptionFieldWeb = By.xpath("//textarea[preceding-sibling::label[text()='Description *']]");
 
     private By durationFieldNative = By.xpath("//android.widget.EditText[@hint='Duration']");
-    private By durationFieldWeb = By.xpath("//input[@placeholder='Duration']");
+    private By durationFieldWeb = By.xpath("//input[preceding-sibling::label[text()='Duration']]");
 
     private By priceFieldNative = By.xpath("//android.widget.EditText[@hint='Price (R)']");
-    private By priceFieldWeb = By.xpath("//input[contains(@placeholder,'Price')]");
+    private By priceFieldWeb = By.xpath("//input[preceding-sibling::label[text()='Price (R)']]");
 
     private By levelDropdownNative = By.xpath("//android.widget.Button[contains(@content-desc,'Level')]");
     private By levelDropdownWeb = By.xpath("//select[contains(@name,'level')]");
