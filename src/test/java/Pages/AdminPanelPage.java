@@ -57,7 +57,7 @@ public class AdminPanelPage {
     private By priceFieldWeb = By.xpath("//input[preceding-sibling::label[text()='Price (R)']]");
 
     private By levelDropdownNative = By.xpath("//android.widget.Button[contains(@content-desc,'Level')]");
-    private By levelDropdownWeb = By.xpath("//select[contains(@name,'level')]");
+    private By levelDropdownWeb = By.xpath("//select[preceding-sibling::label[text()='Level']]");
 
     private By publishedCheckboxNative = By.xpath("//android.widget.CheckBox");
     private By publishedCheckboxWeb = By.xpath("//input[@type='checkbox']");
