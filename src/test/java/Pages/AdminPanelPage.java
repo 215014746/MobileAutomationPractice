@@ -141,13 +141,6 @@ public class AdminPanelPage {
         getElement(levelDropdownNative, levelDropdownWeb).click();
         getElement(levelOptionNative(level), levelOptionWeb(level)).click();
     }
-   /* public void clickLevelDropdown() {
-        getElement(levelDropdownNative, levelDropdownWeb).click();
-    }
-
-    public void togglePublishedCheckbox() {
-        getElement(publishedCheckboxNative, publishedCheckboxWeb).click();
-    }*/
 
     public void ensurePublishedCheckboxChecked() {
         WebElement checkbox = getElement(publishedCheckboxNative, publishedCheckboxWeb);
@@ -182,4 +175,6 @@ public class AdminPanelPage {
             return false;
         }
     }
+
+
 }
