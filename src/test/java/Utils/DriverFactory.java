@@ -22,6 +22,7 @@ public class DriverFactory  {
         if (execType.equalsIgnoreCase("mobileWeb")) {
             //setting the browser to launch
             options.withBrowserName(config.getProperty("browserName"));
+            options.setCapability("appium:chromedriverAutodownload", true);
 
         }//if execution type is native app, we will install and launch the app on the device or emulator
         else if (execType.equalsIgnoreCase("nativeApp")) {
